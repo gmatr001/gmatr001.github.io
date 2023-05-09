@@ -1,0 +1,23 @@
+default
+read metropolis.out i ekin epot
+etot=ekin+epot
+
+clear
+set pchar 0
+label\x `i'
+label\y `etot'
+graph i etot
+terminal
+
+clear
+set pchar 0
+label\x `i'
+label\y `ekin'
+graph i ekin
+terminal
+
+clear
+set pchar 0
+label\x `i'
+label\y `epot'
+graph i epot
